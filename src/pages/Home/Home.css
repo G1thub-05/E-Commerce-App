@@ -1,0 +1,5 @@
+.home { padding: 22px 0 64px; }
+.product-grid { width: min(94%, 1380px); margin: 26px auto 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 1120px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px) { .home { padding-top: 12px; } .product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 13px; } }
+@media (max-width: 470px) { .product-grid { grid-template-columns: 1fr; } }

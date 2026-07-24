@@ -1,0 +1,5 @@
+.search-container { width: min(92%, 680px); margin: 28px auto 20px; position: relative; }
+.search-container::before { content: "⌕"; color: #77738e; font-size: 1.55rem; left: 20px; line-height: 1; position: absolute; top: 50%; transform: translateY(-54%); }
+.search-container input { width: 100%; padding: 15px 22px 15px 54px; color: #292747; background: rgba(255,255,255,.88); border: 1px solid #e4e2ee; border-radius: 15px; box-shadow: 0 8px 24px rgba(45, 43, 90, .07); outline: none; transition: border .2s, box-shadow .2s, transform .2s; }
+.search-container input::placeholder { color: #a09db0; }
+.search-container input:focus { border-color: #9187e9; box-shadow: 0 10px 28px rgba(91, 82, 205, .16); transform: translateY(-1px); }

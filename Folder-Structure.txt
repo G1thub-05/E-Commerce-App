@@ -1,0 +1,76 @@
+src
+│
+├── assets
+│
+├── components
+│   ├── Navbar
+│   │      Navbar.jsx
+│   │      Navbar.css
+│   │
+│   ├── ProductCard
+│   │      ProductCard.jsx
+│   │      ProductCard.css
+│   │
+│   ├── SearchBar
+│   │      SearchBar.jsx
+│   │      SearchBar.css
+│   │
+│   ├── CategoryFilter
+│   │      CategoryFilter.jsx
+│   │      CategoryFilter.css
+│   │
+│   └── CartItem
+│          CartItem.jsx
+│          CartItem.css
+│
+├── context
+│      CartContext.jsx
+│
+├── pages
+│   ├── Home
+│   │      Home.jsx
+│   │      Home.css
+│   │
+│   ├── ProductDetails
+│   │      ProductDetails.jsx
+│   │      ProductDetails.css
+│   │
+│   └── Cart
+│          Cart.jsx
+│          Cart.css
+│
+├── services
+│      api.js
+│
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+
+
+Home
+    Navbar
+    Search Bar
+    Category Filter
+    Product Grid
+
+Product Details
+    Image
+    Title
+    Description
+    Category
+    Price
+    Rating
+    Add to Cart
+
+
+Cart
+    Product List
+    Increase Qty
+    Decrease Qty
+    Remove Product
+    Grand Total
+
+All Products: GET https://fakestoreapi.com/products
+Single Product: GET https://fakestoreapi.com/products/1
+Categories: GET https://fakestoreapi.com/products/categories
