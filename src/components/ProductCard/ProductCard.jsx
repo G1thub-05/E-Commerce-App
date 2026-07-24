@@ -41,8 +41,8 @@ function ProductCard({ product }) {
 			</div>
 
 			<h2>
-				${product.price.toFixed(2)}
-				<span>${(product.price * 1.2).toFixed(2)}</span>
+				Rs. {product.price.toFixed(2)}
+				<span>Rs. {(product.price * 1.2).toFixed(2)}</span>
 			</h2>
 
 			<div className="buttons">

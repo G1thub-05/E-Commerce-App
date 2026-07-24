@@ -41,7 +41,7 @@ function ProductDetails() {
 					<span> ({product.rating.count} Reviews)</span>
 				</div>
 
-				<h3>$ {product.price}</h3>
+				<h3>Rs. {product.price.toFixed(2)}</h3>
 
 				<p>{product.description}</p>
 
