@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Cart from "./pages/Cart/Cart";
+import Login from "./pages/Login/Login";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -23,7 +25,15 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/product/:id" element={<ProductDetails />} />
-				<Route path="/cart" element={<Cart />} />
+				<Route path="/login" element={<Login />} />
+				<Route
+					path="/cart"
+					element={
+						<ProtectedRoute>
+							<Cart />
+						</ProtectedRoute>
+					}
+				/>
 			</Routes>
 		</>
 	);
