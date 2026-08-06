@@ -28,7 +28,7 @@ function Login() {
 		}
 
 		login({ email: email.trim() });
-		toast("Welcome back to ShopEasy!", { icon: "🛒" });
+		toast(" 👤 Welcome back to ShopEasy!", { icon: "🛒" });
 		navigate(location.state?.from?.pathname || "/", { replace: true });
 	}
 
